@@ -1,0 +1,2230 @@
+!SESSION 2020-06-18 15:46:27.672 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-18 15:48:27.283
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-18 15:48:27.283
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7296fe0b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a5066f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-18 15:48:39.808
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2020-06-18 15:51:21.266
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.SWT.error(SWT.java:4597)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:351)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3451)
+	at org.springframework.ide.eclipse.boot.wizard.SearchBoxSection.focusControl(SearchBoxSection.java:110)
+	at org.springframework.ide.eclipse.boot.wizard.MultipleViewsDependencyPage.lambda$4(MultipleViewsDependencyPage.java:122)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3935)
+	at org.eclipse.jface.dialogs.DialogPage.setVisible(DialogPage.java:463)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1253)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1223)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1223)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:918)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3986)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3986)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:54:51.075
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:54:51.092
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a6df932[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:54:51.201
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:54:52.197
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.756
+!MESSAGE Boot LS startup time from start to initialized: 13518ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.870
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.nxsTxAcRisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.896
+!MESSAGE subscribing to classpath changes: sts4.classpath.nxsTxAcR isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.919
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.942
+!MESSAGE subsribers = {sts4.classpath.nxsTxAcR=Send Classpath Notifications(119)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.953
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.973
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:04.995
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.008
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.020
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.nxsTxAcR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.032
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.056
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.073
+!MESSAGE buffering callback sts4.classpath.nxsTxAcR 01-springmvc-forms false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.084
+!MESSAGE executing callback sts4.classpath.nxsTxAcR 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 15:55:05.159
+!MESSAGE executing callback sts4.classpath.nxsTxAcR SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-06-18 16:06:07.356
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.ui 4 0 2020-06-18 16:06:58.260
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.StackOverflowError)
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:188)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+Caused by: java.lang.StackOverflowError
+	at java.lang.Throwable.toString(Unknown Source)
+	at java.lang.Throwable.<init>(Unknown Source)
+	at java.lang.Exception.<init>(Unknown Source)
+	at java.lang.RuntimeException.<init>(Unknown Source)
+	at java.util.concurrent.CompletionException.<init>(Unknown Source)
+	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniRun(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniRunStage(Unknown Source)
+	at java.util.concurrent.CompletableFuture.thenRun(Unknown Source)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:317)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:364)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:373)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.getSelectedProposal(CompletionProposalPopup.java:937)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:14.994
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:15.139
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:15.228
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:15.269
+!MESSAGE buffering callback sts4.classpath.nxsTxAcR 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:15.291
+!MESSAGE executing callback sts4.classpath.nxsTxAcR 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:09:15.327
+!MESSAGE executing callback sts4.classpath.nxsTxAcR SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:49.446
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nxsTxAcR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:49.478
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.nxsTxAcR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:49.494
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:49.509
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nxsTxAcR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:57.807
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:57.823
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a6df932[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:18:57.840
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-18 16:18:59.415
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:00.905
+!MESSAGE Boot LS startup time from start to initialized: 3036ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:00.943
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rvoOBaRJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:00.959
+!MESSAGE subscribing to classpath changes: sts4.classpath.rvoOBaRJ isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:00.976
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:00.990
+!MESSAGE subsribers = {sts4.classpath.rvoOBaRJ=Send Classpath Notifications(536)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.002
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.021
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.032
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.042
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.069
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rvoOBaRJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.085
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.110
+!MESSAGE buffering callback sts4.classpath.rvoOBaRJ 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.125
+!MESSAGE executing callback sts4.classpath.rvoOBaRJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:19:01.186
+!MESSAGE executing callback sts4.classpath.rvoOBaRJ SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-18 16:36:15.069
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jface 2 0 2020-06-18 16:36:23.878
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-18 16:36:23.878
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b9d8aa3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a71f3e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:49:33.071
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rvoOBaRJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:49:33.092
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.rvoOBaRJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:49:33.108
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:49:33.129
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rvoOBaRJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:39.708
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:39.722
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a6df932[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:39.734
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.638
+!MESSAGE Boot LS startup time from start to initialized: 2873ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.676
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bDyTEYpzisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.686
+!MESSAGE subscribing to classpath changes: sts4.classpath.bDyTEYpz isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.701
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.717
+!MESSAGE subsribers = {sts4.classpath.bDyTEYpz=Send Classpath Notifications(1162)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.739
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.748
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.757
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.769
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.793
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bDyTEYpz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.809
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.831
+!MESSAGE buffering callback sts4.classpath.bDyTEYpz 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.844
+!MESSAGE executing callback sts4.classpath.bDyTEYpz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 16:52:42.894
+!MESSAGE executing callback sts4.classpath.bDyTEYpz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 17:14:33.357
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bDyTEYpz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 17:14:33.383
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.bDyTEYpz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 17:14:33.406
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 17:14:33.423
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bDyTEYpz => OK
+!SESSION 2020-06-19 12:07:33.010 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-19 12:07:59.782
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-19 12:07:59.782
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21688427,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@656c5818,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-19 12:08:11.538
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:31.593
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:31.610
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@58994549[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:31.641
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:32.694
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-19 12:15:33.745
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-19 12:15:40.392
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.623
+!MESSAGE Boot LS startup time from start to initialized: 14948ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.749
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EIkKbzrLisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.772
+!MESSAGE subscribing to classpath changes: sts4.classpath.EIkKbzrL isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.788
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.801
+!MESSAGE subsribers = {sts4.classpath.EIkKbzrL=Send Classpath Notifications(235)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.811
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.826
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.841
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.853
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.864
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.873
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.882
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EIkKbzrL => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.892
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.910
+!MESSAGE buffering callback sts4.classpath.EIkKbzrL 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.919
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.943
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.957
+!MESSAGE buffering callback sts4.classpath.EIkKbzrL 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:46.967
+!MESSAGE executing callback sts4.classpath.EIkKbzrL 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:15:47.024
+!MESSAGE executing callback sts4.classpath.EIkKbzrL SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-06-19 12:17:24.184
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:19:55.311
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:20:55.937
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:24:10.274
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:26:41.590
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:31:39.623
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:33:31.739
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jface 2 0 2020-06-19 12:33:43.009
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-19 12:33:43.010
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@617066ee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e20c1ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:36:46.937
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:37:14.118
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:38:03.726
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:39:01.644
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-06-19 12:43:31.671
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:45:30.895
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EIkKbzrL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:45:30.909
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.EIkKbzrL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:45:30.923
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 12:45:30.937
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EIkKbzrL => OK
+!SESSION 2020-06-21 16:52:59.603 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-21 16:53:18.378
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-21 16:53:18.378
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5100c143,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12404f9d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-21 16:53:30.890
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:30.993
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:31.052
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@75496cb7[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:31.098
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:31.832
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:36.820
+!MESSAGE Boot LS startup time from start to initialized: 5670ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:36.967
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bWaGrqwSisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.057
+!MESSAGE subscribing to classpath changes: sts4.classpath.bWaGrqwS isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.106
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.148
+!MESSAGE subsribers = {sts4.classpath.bWaGrqwS=Send Classpath Notifications(72)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.164
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.179
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.194
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.210
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.226
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.241
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.258
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bWaGrqwS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.283
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.323
+!MESSAGE buffering callback sts4.classpath.bWaGrqwS 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.338
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.354
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.388
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.423
+!MESSAGE buffering callback sts4.classpath.bWaGrqwS 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.440
+!MESSAGE executing callback sts4.classpath.bWaGrqwS 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:53:37.555
+!MESSAGE executing callback sts4.classpath.bWaGrqwS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:54:30.870
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bWaGrqwS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:54:30.892
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.bWaGrqwS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:54:30.918
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-21 16:54:30.933
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bWaGrqwS => OK
+!SESSION 2020-06-22 12:21:08.346 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-22 12:21:36.684
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 12:21:36.684
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6df87ffd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c1f0c7b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-22 12:21:47.826
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2020-06-22 12:22:05.876
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.ui 4 0 2020-06-22 12:26:48.909
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.SWT.error(SWT.java:4597)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:351)
+	at org.eclipse.swt.widgets.Widget.addListener(Widget.java:196)
+	at org.springframework.ide.eclipse.boot.wizard.MultipleViewsDependencyPage.lambda$3(MultipleViewsDependencyPage.java:122)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:19.555
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:19.567
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@22a356bb[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:19.582
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:20.273
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.365
+!MESSAGE Boot LS startup time from start to initialized: 11765ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.458
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ktEZTjZsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.474
+!MESSAGE subscribing to classpath changes: sts4.classpath.ktEZTjZs isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.490
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.506
+!MESSAGE subsribers = {sts4.classpath.ktEZTjZs=Send Classpath Notifications(257)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.516
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.526
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.538
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.553
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.567
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.578
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.586
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.594
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ktEZTjZs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.605
+!MESSAGE classpath=84 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.649
+!MESSAGE buffering callback sts4.classpath.ktEZTjZs 03-studentregistrationform false 84
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.660
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.672
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.692
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.710
+!MESSAGE buffering callback sts4.classpath.ktEZTjZs 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.721
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.732
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.755
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.782
+!MESSAGE buffering callback sts4.classpath.ktEZTjZs 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.797
+!MESSAGE executing callback sts4.classpath.ktEZTjZs 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:30:31.907
+!MESSAGE executing callback sts4.classpath.ktEZTjZs SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2020-06-22 12:43:53.447
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 12:43:53.448
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f8404a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23e66503,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d607f48,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 12:43:53.448
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1112b12f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e0c2e84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2020-06-22 12:45:49.926 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-06-22 12:46:28.173
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-06-22 12:46:31.482
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 12:46:31.482
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a16d393,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14d1032a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-22 12:46:43.682
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:43.806
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:43.930
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@19b6aaae[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:44.122
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:44.227
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:51.755
+!MESSAGE Boot LS startup time from start to initialized: 7594ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:51.921
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eAhITpLZisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:51.958
+!MESSAGE subscribing to classpath changes: sts4.classpath.eAhITpLZ isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:51.983
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.006
+!MESSAGE subsribers = {sts4.classpath.eAhITpLZ=Send Classpath Notifications(92)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.033
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.099
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.119
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.150
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.160
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.174
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.185
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.204
+!MESSAGE classpath=84 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.213
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eAhITpLZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.223
+!MESSAGE buffering callback sts4.classpath.eAhITpLZ 03-studentregistrationform false 84
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.245
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.254
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.276
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.318
+!MESSAGE buffering callback sts4.classpath.eAhITpLZ 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.339
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.352
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.370
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.393
+!MESSAGE buffering callback sts4.classpath.eAhITpLZ 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.402
+!MESSAGE executing callback sts4.classpath.eAhITpLZ 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 12:46:52.608
+!MESSAGE executing callback sts4.classpath.eAhITpLZ SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-06-22 13:10:01.053
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:11:15.300
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eAhITpLZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:11:15.324
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.eAhITpLZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:11:15.353
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:11:15.366
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eAhITpLZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:46.217
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:46.230
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@19b6aaae[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:46.247
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-22 13:12:47.536
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.713
+!MESSAGE Boot LS startup time from start to initialized: 3444ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.757
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xylWXbaHisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.771
+!MESSAGE subscribing to classpath changes: sts4.classpath.xylWXbaH isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.787
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.800
+!MESSAGE subsribers = {sts4.classpath.xylWXbaH=Send Classpath Notifications(563)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.813
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.823
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.838
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.856
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.871
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.878
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.885
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.895
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.903
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xylWXbaH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.913
+!MESSAGE buffering callback sts4.classpath.xylWXbaH 03-studentregistrationform false 88
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-22 13:12:49.927
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$11(LSPTextHover.java:237)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$10(LSPTextHover.java:246)
+	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:244)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.940
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.952
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.967
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.981
+!MESSAGE buffering callback sts4.classpath.xylWXbaH 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:49.991
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:50.000
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:50.016
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:50.026
+!MESSAGE buffering callback sts4.classpath.xylWXbaH 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:50.038
+!MESSAGE executing callback sts4.classpath.xylWXbaH 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 13:12:50.114
+!MESSAGE executing callback sts4.classpath.xylWXbaH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 14:01:54.664
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xylWXbaH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 14:01:54.684
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.xylWXbaH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 14:01:54.702
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 14:01:54.717
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xylWXbaH => OK

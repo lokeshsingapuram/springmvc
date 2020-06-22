@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table>
+		<form:form action="register" modelAttribute="student" method="post">
+			<tr>
+				<td>StudentID::</td>
+				<td><form:input path="studentId" /></td>
+			</tr>
+			<tr>
+				<td>StudentName::</td>
+				<td><form:input path="studentName" /></td>
+			</tr>
+			<tr>
+				<td>Email::</td>
+				<td><form:input path="email" /></td>
+			</tr>
+			<tr>
+				<td>StudentName::</td>
+				<td><form:password path="studentName" /></td>
+			</tr>
+			<tr>
+				<td>StudentAddress::</td>
+				<td><form:input path="studentAddress" /></td>
+			</tr>
+			<tr>
+				<td>StudentAddress::</td>
+				<td><form:input path="studentAddress" /></td>
+			</tr>
+		</form:form>
+	</table>
+
+</body>
+</html>
