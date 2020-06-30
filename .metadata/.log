@@ -7859,3 +7859,506 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-28 18:45:35.636
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ytGothQg => OK
+!SESSION 2020-06-30 13:44:25.225 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-30 13:44:59.053
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-30 13:44:59.053
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@467a2584,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@121dce2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-30 13:45:09.721
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gowri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:00.532
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:00.542
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6179ca6[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:00.561
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:00.996
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-30 13:56:03.075
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.183
+!MESSAGE Boot LS startup time from start to initialized: 12600ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.247
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZlLqLfbaisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.263
+!MESSAGE subscribing to classpath changes: sts4.classpath.ZlLqLfba isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.276
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.295
+!MESSAGE subsribers = {sts4.classpath.ZlLqLfba=Send Classpath Notifications(122)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.305
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.315
+!MESSAGE project 05-sb-exceptionhandling ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.323
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.333
+!MESSAGE Preparing classpath changed notification 05-sb-exceptionhandling
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.345
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.360
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.367
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.374
+!MESSAGE project 04-SB-BookApp ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.382
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.390
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZlLqLfba => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.396
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.409
+!MESSAGE buffering callback sts4.classpath.ZlLqLfba 05-sb-exceptionhandling false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.416
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.425
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.439
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.454
+!MESSAGE buffering callback sts4.classpath.ZlLqLfba 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.464
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.475
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.493
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.513
+!MESSAGE buffering callback sts4.classpath.ZlLqLfba 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.524
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.536
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.556
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.572
+!MESSAGE buffering callback sts4.classpath.ZlLqLfba 03-studentregistrationform false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.582
+!MESSAGE Preparing classpath changed notification 04-SB-BookApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.592
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.611
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.629
+!MESSAGE buffering callback sts4.classpath.ZlLqLfba 04-SB-BookApp false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.640
+!MESSAGE executing callback sts4.classpath.ZlLqLfba 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 13:56:13.728
+!MESSAGE executing callback sts4.classpath.ZlLqLfba SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:26:14.097
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZlLqLfba
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:26:14.119
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZlLqLfba
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:26:14.134
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:26:14.166
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZlLqLfba => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.222
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.260
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6179ca6[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.280
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.812
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.834
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6179ca6[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:23.850
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:27.914
+!MESSAGE Boot LS startup time from start to initialized: 4046ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:27.968
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.igDkwvFfisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:27.984
+!MESSAGE subscribing to classpath changes: sts4.classpath.igDkwvFf isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:27.997
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.011
+!MESSAGE subsribers = {sts4.classpath.igDkwvFf=Send Classpath Notifications(274)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.023
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.033
+!MESSAGE project 01-phonecontactwebApp ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.045
+!MESSAGE Preparing classpath changed notification 01-phonecontactwebApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.057
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.068
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.081
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.094
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.106
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.117
+!MESSAGE project 04-SB-BookApp ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.134
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 01-phonecontactwebApp false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.148
+!MESSAGE project 05-sb-exceptionhandling ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.158
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.167
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.175
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.182
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.igDkwvFf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.189
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.241
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.250
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.260
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.275
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.288
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.297
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.306
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.317
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.345
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 03-studentregistrationform false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.354
+!MESSAGE Preparing classpath changed notification 04-SB-BookApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.362
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.377
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.398
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 04-SB-BookApp false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.416
+!MESSAGE Preparing classpath changed notification 05-sb-exceptionhandling
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.428
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.447
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.460
+!MESSAGE buffering callback sts4.classpath.igDkwvFf 05-sb-exceptionhandling false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.467
+!MESSAGE executing callback sts4.classpath.igDkwvFf 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:35:28.681
+!MESSAGE executing callback sts4.classpath.igDkwvFf SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:54:58.587
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.igDkwvFf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:54:58.604
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.igDkwvFf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:54:58.620
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:54:58.632
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.igDkwvFf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:55:56.925
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:55:56.934
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6179ca6[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:55:56.947
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.197
+!MESSAGE Boot LS startup time from start to initialized: 11242ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.288
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dxRkpihLisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.308
+!MESSAGE subscribing to classpath changes: sts4.classpath.dxRkpihL isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.326
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.343
+!MESSAGE subsribers = {sts4.classpath.dxRkpihL=Send Classpath Notifications(955)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.361
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.383
+!MESSAGE project 01-phonecontactwebApp ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.396
+!MESSAGE Preparing classpath changed notification 01-phonecontactwebApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.403
+!MESSAGE project 01-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.412
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.420
+!MESSAGE project 02-springmvc-forms ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.430
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.437
+!MESSAGE project 03-studentregistrationform ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.448
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 01-phonecontactwebApp false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.458
+!MESSAGE project 04-SB-BookApp ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.469
+!MESSAGE Preparing classpath changed notification 01-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.480
+!MESSAGE project 05-sb-exceptionhandling ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.490
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.500
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.510
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.520
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dxRkpihL => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.530
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 01-springmvc-forms false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.542
+!MESSAGE Preparing classpath changed notification 02-springmvc-forms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.552
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.570
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.587
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 02-springmvc-forms false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.598
+!MESSAGE Preparing classpath changed notification 03-studentregistrationform
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.608
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.631
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.652
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 03-studentregistrationform false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.664
+!MESSAGE Preparing classpath changed notification 04-SB-BookApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.675
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.699
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.721
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 04-SB-BookApp false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.733
+!MESSAGE Preparing classpath changed notification 05-sb-exceptionhandling
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.745
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.767
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.788
+!MESSAGE buffering callback sts4.classpath.dxRkpihL 05-sb-exceptionhandling false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.801
+!MESSAGE executing callback sts4.classpath.dxRkpihL 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-30 16:56:08.902
+!MESSAGE executing callback sts4.classpath.dxRkpihL SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-30 17:05:17.807
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [editContact(Contact, Model) [in ViewContactInfoController [in [Working copy] ViewContactInfoController.java [in com.tcs.controller [in src/main/java [in 01-phonecontactwebApp]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:614)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:664)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:540)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.lambda$0(SpringBootJavaHoverProvider.java:41)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-06-30 17:05:17.809
+!MESSAGE editContact(Contact, Model) [in ViewContactInfoController [in [Working copy] ViewContactInfoController.java [in com.tcs.controller [in src/main/java [in 01-phonecontactwebApp]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-30 17:05:17.828
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [editContact(Contact, Model) [in ViewContactInfoController [in [Working copy] ViewContactInfoController.java [in com.tcs.controller [in src/main/java [in 01-phonecontactwebApp]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:614)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:664)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:540)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-06-30 17:05:17.828
+!MESSAGE editContact(Contact, Model) [in ViewContactInfoController [in [Working copy] ViewContactInfoController.java [in com.tcs.controller [in src/main/java [in 01-phonecontactwebApp]]]]] does not exist
