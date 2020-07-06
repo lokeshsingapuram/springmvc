@@ -10,6 +10,7 @@ public class Contact {
 	private Integer contactId;
 	private String contactName;
 	private String contactEmail;
+	private Long contactPhoneNumber;
 	private Date createdDate;
 	private Date updatedDate;
 
