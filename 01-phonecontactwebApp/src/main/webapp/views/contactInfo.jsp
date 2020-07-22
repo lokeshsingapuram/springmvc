@@ -7,8 +7,8 @@
 <meta charset="ISO-8859-1">
 <title>Phone Book Application</title>
 <style type="text/css">
-registration.error{
-color:red;
+form .error {
+  color: #ff0000;
 }
 </style>
 <script type="text/javascript"
@@ -41,6 +41,7 @@ color:red;
 </head>
 <body>
 	<h3>${succMsg}</h3>
+	<h1>Phone Book</h1>
 	<forms:form action="saveContact" modelAttribute="contact" method="post"
 		name="registration" id="registration">
 		<table>

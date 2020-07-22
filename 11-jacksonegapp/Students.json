@@ -1,0 +1,11 @@
+[ {
+  "Student_Id" : 102,
+  "Student_Name" : "joffrey",
+  "Student_Course" : "python",
+  "Student_Age" : 23
+}, {
+  "Student_Id" : 101,
+  "Student_Name" : "Elon",
+  "Student_Course" : "java",
+  "Student_Age" : 24
+} ]

@@ -1,6 +1,7 @@
 package com.tcs.service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
@@ -38,8 +39,9 @@ public class ContactServiceImpl implements ContactService {
 
 	@Override
 	public Contact getContactById(Integer id) {
-		ContactEntity contactById = contactRepo.findById(id).get();
-		if (contactById.getContactId() != null) {
+		Optional<ContactEntity> contactById = contactRepo.findById(id);
+		if (contactById.isPresent()) {
+			contactById.get();
 			Contact contact1 = new Contact();
 			BeanUtils.copyProperties(contactById, contact1);
 			return contact1;
